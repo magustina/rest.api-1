@@ -60,7 +60,7 @@ public class UsuarioController {
 		usuarioService.crearUsuario(usuario);
 		
 		HttpHeaders headers = new HttpHeaders();
-		headers.setLocation(ucBuilder.path("usuario/{id}").buildAndExpand(usuario.getId()).toUri());
+		headers.setLocation(ucBuilder.path("/usuario/{id}").buildAndExpand(usuario.getId()).toUri());
 		return new ResponseEntity<String>(headers, HttpStatus.CREATED);
 		
 	}
