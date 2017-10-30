@@ -2,7 +2,7 @@ package py.edu.ucsa.rest.api.core.services;
 
 import java.util.List;
 
-import py.edu.ucsa.rest.api.core.model.UsuarioDTO;
+import py.edu.ucsa.rest.web.dto.UsuarioDTO;
 
 public interface UsuarioService {
 	UsuarioDTO getById(long id);

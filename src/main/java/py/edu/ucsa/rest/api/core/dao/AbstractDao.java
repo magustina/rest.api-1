@@ -32,7 +32,7 @@ public abstract class AbstractDao<PK extends Serializable, T> {
 		return (T) entityManager.find(persistentClass, id);
 	}
 
-	protected void insertar(T entity) {
+	protected void persistir(T entity) {
 		entityManager.persist(entity);
 	}
 

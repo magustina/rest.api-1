@@ -15,9 +15,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import py.edu.ucsa.rest.api.core.model.UsuarioDTO;
 import py.edu.ucsa.rest.api.core.services.UsuarioService;
 import py.edu.ucsa.rest.api.util.ErrorDTO;
+import py.edu.ucsa.rest.web.dto.UsuarioDTO;
 
 @RestController
 @RequestMapping("/usuario")

@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Service;
 
-import py.edu.ucsa.rest.api.core.model.UsuarioDTO;
+import py.edu.ucsa.rest.web.dto.UsuarioDTO;
 
 @Service("usuarioService")
 public class UsuarioServiceImpl implements UsuarioService {
