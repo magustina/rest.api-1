@@ -2,16 +2,15 @@ package py.edu.ucsa.rest.api.core.services;
 
 import java.util.List;
 
-import py.edu.ucsa.rest.web.dto.UsuarioDTO;
+import py.edu.ucsa.rest.api.core.model.Usuario;
 
 public interface UsuarioService {
-	UsuarioDTO getById(long id);
-	UsuarioDTO getByUsuario(String name);
-	void crearUsuario(UsuarioDTO user);
-	void actualizarUsuario(UsuarioDTO user);
+	Usuario getById(long id);
+	Usuario getByUsuario(String name);
+	void guardarUsuario(Usuario user);
 	void eliminarUsuarioById(long id);
-	List<UsuarioDTO> listarTodos();
+	List<Usuario> listarTodos();
 	void eliminarTodos();
-	boolean isExisteUsuario(UsuarioDTO user);
+	boolean isExisteUsuario(Usuario user);
 	
 }

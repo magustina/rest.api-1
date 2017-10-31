@@ -8,7 +8,9 @@ import javax.persistence.PersistenceContext;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
+@Component
 public abstract class AbstractDao<PK extends Serializable, T> {
 
 	private final Class<T> persistentClass;
