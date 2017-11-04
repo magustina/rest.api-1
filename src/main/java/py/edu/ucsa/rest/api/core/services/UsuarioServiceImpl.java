@@ -60,7 +60,9 @@ public class UsuarioServiceImpl implements UsuarioService {
 //	}
 
 	@Override
-	public void eliminarUsuarioById(long id) {	
+	public void eliminarUsuarioById(long id) {
+		Usuario user = dao.getById((int) id);
+		dao.borrarPorUsuario(user.getUsuario());
 	}
 
 	@Override
@@ -70,6 +72,10 @@ public class UsuarioServiceImpl implements UsuarioService {
 
 	@Override
 	public void eliminarTodos() {
+		List<Usuario> users = dao.listarTodos();
+		for(Usuario w: users) {
+			dao.borrarPorUsuario(w.getUsuario());
+		}
 	}
 
 	@Override
